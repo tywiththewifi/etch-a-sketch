@@ -1,7 +1,7 @@
 
 const container = document.querySelector('#container');
 
-
+// Logic for grid creation goes here
 function createGrid(n) {
 
     container.innerHTML = '';
@@ -29,6 +29,7 @@ createGrid(16);
 
 const newGrid = document.querySelector('#button');
 
+// Logic for button press goes here
 newGrid.addEventListener('click', () => {
     let userInput = prompt("How many squares per side for the new grid? Please choose a number less than 100");
     if (userInput < 100) {
